@@ -1,0 +1,22 @@
+{
+  "name": "SoundBoard-discord",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RaphCPV/SoundBoard-discord.git",
+  "author": "raphael.champeaud <raphael.champeaud@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "node-opus": "^0.3.1",
+  },
+  "xo": {
+    "space": 2,
+    "rules": {
+      "max-len": [
+        "error",
+        80,
+        2
+      ]
+    }
+  }
+}
