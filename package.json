@@ -7,9 +7,19 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.4.2",
-    "node-opus": "^0.3.1",
+    "enmap": "^4.5.0",
+    "eslint": "^5.9.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.1"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "devDependencies": {
+    "xo": "^0.23.0"
   },
   "xo": {
+    "extends": ".eslintrc.json",
     "space": 2,
     "rules": {
       "max-len": [
