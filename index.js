@@ -8,7 +8,9 @@ const config = require('./config.json');
 client.config = config;
 
 client.on('ready', () => {
-  client.user.setPresence({game: {name: `${config.prefix}help`}, type: 0});
+  client.user.setActivity(client.config.prefix+'help',
+    {type: 'STREAMING',
+      url: 'https://www.twitch.tv/'});
 });
 
 fs.readdir('./events/', (err, files) => {
@@ -39,5 +41,11 @@ fs.readdir('./commands/', (err, files) => {
   });
 });
 
+
 client.login(config.token);
 console.log('ok');
+
+
+//ideas for next : set a var in config.json for staying or not in the
+// vocal chat, create function to call to set it, and change it to false
+// when leave is triggered

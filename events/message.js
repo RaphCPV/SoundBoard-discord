@@ -14,5 +14,5 @@ module.exports = (client, message) => {
     return message.channel.send('Unknown command, please use *!!help* to see' +
       ' all the available commands');
   }
-  cmd.run(client, message, args);
+  cmd.run(client, message);
 };

@@ -3,5 +3,4 @@ exports.run = (client, message) => {
     .then(message => {
       message.react('💩'); // Poop
     }).catch(console.error);
-  message.delete();
 };

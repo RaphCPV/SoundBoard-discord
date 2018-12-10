@@ -3,9 +3,11 @@ exports.run = (client, message) => {
     return message.channel.send('Please mention a user');
   }
   for( let i =0; i< 20; i++){
-    message.channel.send(`${message.mentions.members.first()}`)
-      .then(message => {
-        message.react('❤');
-      }).catch(() => {});
+    setTimeout(()=>{
+      message.channel.send(`${message.mentions.members.first()}`)
+        .then(message => {
+          message.react('❤');
+        }).catch(() => {});
+    },5000);
   }
 };

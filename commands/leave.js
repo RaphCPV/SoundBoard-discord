@@ -1,9 +1,10 @@
 exports.run = (client, message) => {
   if (!message.guild) {
-    return ;
+    return;
   }
 
   if (message.member.voiceChannel) {
+    client.config.stay = false;
     message.member.voiceChannel.leave();
     message.delete();
   } else {
