@@ -1,4 +1,6 @@
 {
   "token": "yourtokenhere",
-  "prefix": "yourprefixhere"
+  "prefix": "yourprefixhere",
+  "soundspath": "./sounds/",
+  "stay": false
 }
