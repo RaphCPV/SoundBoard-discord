@@ -1,6 +1,6 @@
 {
-  "token": "NTAxNzM0NzM1ODc4NDIyNTI5.DuhUmw.XBW93wXDrfU9YREk74OpalyNDkw",
-  "prefix": "!!",
+  "token": "yourtokenhere",
+  "prefix": "yourprefixhere",
   "soundspath": "./sounds/",
   "stay": false
 }
